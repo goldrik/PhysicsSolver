@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    style="?android:attr/buttonBarButtonStyle"
+    android:background="@drawable/chalkboardbackground"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".EqSelect" >
+    
+     <TextView
+         android:id="@+id/equation"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="@string/title"
+         android:textColor="#FFF"
+         android:textSize="32sp"
+         android:typeface="serif" />
+     
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:paddingBottom="20dp"
+         android:text="@string/description"
+         android:textColor="#FFF"
+         android:textSize="13sp"
+         android:typeface="serif" />
+     
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center|center_vertical"
+         android:orientation="vertical"
+         android:paddingBottom="30dp" >
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:orientation="horizontal"
+             android:paddingTop="100dp" >
+
+             <Button
+                 android:id="@+id/btn1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="@string/section1"
+                 android:onClick="selectEq" />
+				<!-- android:background="@android:color/black"
+                 android:textColor="#ffffff" -->
+             
+             
+             <Button
+                 android:id="@+id/btn2"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:onClick="selectEq"
+                 android:text="@string/section2"/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:orientation="horizontal"
+             android:paddingTop="30dp" >
+
+             <Button
+                 android:id="@+id/btn3"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:onClick="selectEq"
+                 android:text="@string/section3"/>
+
+             <Button
+                 android:id="@+id/btn4"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:onClick="selectEq"
+                 android:text="@string/section4"/>
+         </LinearLayout>
+     </LinearLayout>
+     
+</LinearLayout>

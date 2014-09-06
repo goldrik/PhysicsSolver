@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/chalkboardbackground"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".Calc" >
+    
+     <TextView
+         android:id="@+id/equation"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="@string/eqText"
+         android:textColor="#FFF"
+         android:textSize="32sp"
+         android:typeface="serif" />
+     
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:paddingBottom="20dp"
+         android:text="@string/description2"
+         android:textColor="#FFF"
+         android:textSize="13sp"
+         android:typeface="serif" />
+     
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center|center_vertical"
+         android:orientation="vertical"
+         android:paddingBottom="30dp" >
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:orientation="horizontal"
+             android:paddingTop="30dp" >
+             
+             <EditText android:id="@+id/varfield1"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="2"
+		        android:textColor="#FFF"
+		        android:hint="@string/var"
+		        android:paddingBottom="10dp"
+		        android:inputType="number"/>
+             
+             <EditText android:id="@+id/varfield2"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="2"
+		        android:textColor="#FFF"
+		        android:hint="@string/var"
+		        android:paddingBottom="10dp"
+		        android:inputType="number"/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:orientation="horizontal"
+             android:paddingTop="30dp" >
+             
+             <EditText android:id="@+id/varfield3"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="2"
+		        android:textColor="#FFF"
+		        android:hint="@string/var"
+		        android:paddingBottom="10dp"
+		        android:inputType="number"/>
+             
+             <EditText android:id="@+id/varfield4"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="2"
+		        android:textColor="#FFF"
+		        android:hint="@string/var"
+		        android:paddingBottom="10dp"
+		        android:inputType="number"/>
+         </LinearLayout>
+         
+     </LinearLayout>
+     
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center|center_vertical"
+         android:orientation="vertical" >
+         
+         <Button
+           android:id="@+id/calculate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:onClick="startCalc"
+           android:text="@string/calculate"
+           android:typeface="serif" />
+	     
+         <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center|center_vertical"
+	         android:orientation="horizontal"
+	         android:paddingTop="30dp" >
+             
+	     <TextView
+	         android:id="@+id/ans"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/answer"
+	         android:textSize="22sp"
+	         android:gravity="center"
+	         android:textStyle="italic"
+	         android:textColor="#FFF"
+	         android:typeface="serif" />
+	     
+	     <TextView
+	         android:id="@+id/units"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:gravity="center"
+	         android:paddingLeft="15sp"
+	         android:text="@string/units"
+	         android:textColor="#FFF"
+	         android:textSize="22sp"
+	         android:textStyle="italic"
+	         android:typeface="serif" />
+
+	     </LinearLayout>
+	     
+     </LinearLayout>
+     
+</LinearLayout>
